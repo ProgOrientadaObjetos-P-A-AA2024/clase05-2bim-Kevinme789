@@ -15,7 +15,6 @@ public class EvaluacionEnsayo implements EvaluacionTipoDos {
     private double totalProblemas;
     protected double promedioEnsayo;
 
-    
     public void establecerNumeroProblemas(int n) {
         numeroProblemas = n;
     }
@@ -31,8 +30,7 @@ public class EvaluacionEnsayo implements EvaluacionTipoDos {
     public double obtenerTotalProblemas() {
         return totalProblemas;
     }
-    
-    
+
     @Override
     public void establecerPromedioEnsayo() {
 
@@ -45,5 +43,7 @@ public class EvaluacionEnsayo implements EvaluacionTipoDos {
         return promedioEnsayo;
 
     }
-    
+
+    // Tenemos que llamar obligatoriamente a los metodos abstractos ya que estos
+    // le dan logica a los metodos de la interfaz
 }
